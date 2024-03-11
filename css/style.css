@@ -122,7 +122,10 @@ a {
 }
 
 
-
+header{
+    display: flex;
+    justify-content: space-between;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
