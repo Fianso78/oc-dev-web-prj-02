@@ -126,6 +126,14 @@ header{
     display: flex;
     justify-content: space-between;
 }
+ul{
+    list-style: none;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
