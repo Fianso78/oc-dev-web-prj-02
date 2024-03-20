@@ -121,11 +121,94 @@ a {
     margin-bottom: 5px;
 }
 
+/* Alignement des mots "Activités" et "Hébergements" */
 
-header{
+header {
     display: flex;
     justify-content: space-between;
-}
+    align-items: center; /* Pour aligner verticalement les éléments du header */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin: 0 10px; /* Pour ajouter de l'espace entre les éléments de la liste */
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+  }
+
+/* Changement de couleur lorsqu'on clique sur un onglet */
+
+  header nav ul li a {
+    text-decoration: none;
+    color: black; /* Couleur par défaut du texte */
+    position: relative; /* Positionnement relatif pour ajouter la barre */
+  }
+  
+  header nav ul li a:hover,
+  header nav ul li a:active {
+    color: blue; /* Couleur du texte au survol ou au clic */
+  }
+  
+  header nav ul li a:hover::before,
+  header nav ul li a:active::before {
+    content: ''; /* Ajoute une pseudo-élément avant le texte */
+    position: absolute; /* Positionnement absolu pour le positionner par rapport à l'élément parent */
+    width: 100%; /* Largeur égale à la largeur de l'élément parent */
+    height: 3px; /* Hauteur de la barre bleue */
+    background-color: blue; /* Couleur de la barre */
+    top: -5px; /* Décalage vers le haut pour la barre */
+  }
+  
+/* Taille du logo */
+
+  .logo {
+    width: 61.09px; /* Largeur */
+    height: 19px; /* Hauteur */
+  }
+  
+  /* Optionnel : pour centrer le logo verticalement */
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Taille du Header, texte */
+  
+  header {
+    width: 100%; /* Pour que le header prenne toute la largeur de la page */
+    height: 79px; /* Hauteur spécifique de 79 pixels */
+  }
+  
+  .logo {
+    width: 61.09px; /* Largeur souhaitée */
+    height: 19px; /* Hauteur souhaitée */
+  }
+  
+  /* Optionnel : pour centrer le logo verticalement */
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .hebergement {
+    width: 113px; /* Largeur pour "Hébergements" */
+    height: 35px; /* Hauteur pour "Hébergements" */
+    line-height: 35px; /* Pour centrer verticalement le texte */
+  }
+  
+  .activites {
+    width: 63px; /* Largeur pour "Activités" */
+    height: 35px; /* Hauteur pour "Activités" */
+    line-height: 35px; /* Pour centrer verticalement le texte */
+  }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
