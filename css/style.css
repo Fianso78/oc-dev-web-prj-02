@@ -151,20 +151,17 @@ header {
     color: black; /* Couleur par défaut du texte */
     position: relative; /* Positionnement relatif pour ajouter la barre */
   }
-  
-  header nav ul li a:hover,
-  header nav ul li a:active {
-    color: blue; /* Couleur du texte au survol ou au clic */
+
+  .hebergement {
+    color: #0065FC;
   }
-  
-  header nav ul li a:hover::before,
-  header nav ul li a:active::before {
+  .hebergement-bar {
     content: ''; /* Ajoute une pseudo-élément avant le texte */
-    position: absolute; /* Positionnement absolu pour le positionner par rapport à l'élément parent */
-    width: 100%; /* Largeur égale à la largeur de l'élément parent */
+    position: absolute;
+    width: 110px; /* Largeur égale à la largeur de l'élément parent */
     height: 3px; /* Hauteur de la barre bleue */
-    background-color: blue; /* Couleur de la barre */
-    top: -5px; /* Décalage vers le haut pour la barre */
+    background-color: #0065FC; /* Couleur de la barre */
+    top: 10px; /* Décalage vers le haut pour la barre */
   }
   
 /* Taille du logo */
@@ -210,6 +207,148 @@ header {
     line-height: 35px; /* Pour centrer verticalement le texte */
   }
 
+/* Taille du texte en gras principal */
+
+  .headline h1 {
+  width: 1340px; /* Largeur spécifique */
+  height: 26px; /* Hauteur spécifique */
+  line-height: 26px; /* Pour centrer verticalement le texte */
+ }
+
+/* Taille du sous-titres */
+
+ .headline p {
+    width: 1340px; /* Largeur spécifique */
+    height: 19px; /* Hauteur spécifique */
+
+/* Barre de recherche */
+
+ }
+ .search-bar {
+    display: flex;
+    align-items: center;
+    width: 377px; /* Largeur de la barre de recherche */
+    height: 49px; /* Hauteur de la barre de recherche */
+    border-radius: 15px; /* Coins arrondis */
+    border: 1px solid #ccc; /* Bordure */
+    overflow: hidden; /* Pour masquer les éléments qui dépassent */
+  }
+  
+  .left-button {
+    position: absolute;
+    width: 50px; /* Largeur du bouton de gauche */
+    height: 49px; /* Hauteur du bouton de gauche */
+    border-right: 1px solid #ccc; /* Bordure de séparation */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .vector-icon {
+    width: 14px; /* Largeur de l'icône de vecteur */
+    height: 18px; /* Hauteur de l'icône de vecteur */
+
+  }
+  
+  .search-input {
+    flex: 1;
+    position: relative;
+    padding-right: 50px;
+    left: 50px;
+    border: none; /* Supprimer la bordure par défaut */
+    outline: none; /* Supprimer la mise en surbrillance du focus */
+    font-weight: 700;
+    font-size: 18px;
+    height: 49px;
+    line-height: 49px;
+    text-align: center;
+    color: #000;
+  }
+  
+  .search-button {
+    width: auto; /* La taille du bouton s'ajustera à son contenu */
+    height: 100%;
+    padding: 0 20px; /* Espacement intérieur */
+    background-color: #007bff; /* Couleur de fond bleu */
+    color: #fff; /* Couleur du texte */
+    border: none; /* Supprimer la bordure par défaut */
+    cursor: pointer; /* Curseur pointer */
+    font-weight: 700; 
+    font-size: 18px;
+  }
+  
+
+  /* Filtre catégorie */
+
+  .filter-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  
+  .filter-name {
+    max-width: 54px;
+    font-weight: 700;
+    font-size: 18px;
+    position: relative;
+    padding-right: 15px;
+  }
+
+  .filter-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px; /* Hauteur des boutons */
+    padding: 4px 19px 4px 19px; /* Espacement intérieur */
+    border-style: groove;
+    border-width: 2px;
+    border-color: #D9D9D9;
+    border-radius: 25px; /* Coins arrondis */
+    background-color: #fff; /* Couleur de fond des boutons */
+    margin-right: 10px; /* Marge entre les boutons */
+    font-weight: 700;
+    font-size: 17px; /* Taille de la police */
+    color: #333; /* Couleur du texte */
+    gap: 10px;
+  }
+
+  .filter-button:hover { /* Couleur si souris sur l'élement */
+    background-color: #DEEBFF;
+  }
+
+  .filter-button img {
+    width: 20px; /* Largeur des logos */
+    height: auto; /* Hauteur des logos */
+    margin-right: 5px; /* Marge entre le logo et le texte */
+  }
+
+  .info {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    border: 1px solid #D9D9D9;
+  }
+
+  .vector-icon-info {
+    position: relative;
+    top: 2px;
+    left: 10px;
+    width: 4px;
+    height: 10px;
+  }
+
+  .info-name {
+    position: relative;
+    left: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    top: -29px;
+  }
+  
+  .headline {
+    padding-bottom: 35px;
+  }
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
