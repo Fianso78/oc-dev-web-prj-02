@@ -126,17 +126,6 @@ a {
 header {
     display: flex;
     justify-content: space-between;
-<<<<<<< HEAD
-}
-ul{
-    list-style: none;
-}
-
-.menu {
-    display: flex;
-    gap: 20px;
-}
-=======
     align-items: center; /* Pour aligner verticalement les éléments du header */
   }
   
@@ -154,7 +143,6 @@ ul{
   nav ul li a {
     text-decoration: none;
   }
->>>>>>> 6686d055029e6883f2e88a1b66dfd788959f47ec
 
 /* Changement de couleur lorsqu'on clique sur un onglet */
 
