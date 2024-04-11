@@ -160,11 +160,8 @@ header {
     color: #0065FC;
   }
   .hebergement-bar {
-    content: ''; /* Ajoute une pseudo-élément avant le texte */
-    width: 110px; /* Largeur égale à la largeur de l'élément parent */
     height: 3px; /* Hauteur de la barre bleue */
     background-color: #0065FC; /* Couleur de la barre */
-    top: 10px; /* Décalage vers le haut pour la barre */
   }
   
 /* Taille du logo */
@@ -309,6 +306,7 @@ header {
     font-size: 17px; /* Taille de la police */
     color: #333; /* Couleur du texte */
     gap: 10px;
+    cursor: pointer;
   }
 
   .filter-button:hover { /* Couleur si souris sur l'élement */
