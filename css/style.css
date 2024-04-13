@@ -157,13 +157,21 @@ header {
   }
 
   .hebergement {
-    color: #0065FC;
+    color: var(--main-color);
   }
   .hebergement-bar {
     height: 3px; /* Hauteur de la barre bleue */
-    background-color: #0065FC; /* Couleur de la barre */
+    background-color: var(--main-color); /* Couleur de la barre */
   }
-  
+  .navlink { /* Barre de lien */
+    font-weight: 400; 
+    font-size: 16px; /* Définir la taille et la épaisseur de la police */
+    padding-top: 10px;
+  }
+  .navlink:hover { /* Uniquement quand survolé par le curseur */
+    border-top: solid 3px var(--main-color);
+    color: var(--main-color);
+  }
 /* Taille du logo */
 
   .logo {
@@ -195,17 +203,7 @@ header {
     align-items: center;
   }
   
-  .hebergement {
-    width: 113px; /* Largeur pour "Hébergements" */
-    height: 35px; /* Hauteur pour "Hébergements" */
-    line-height: 35px; /* Pour centrer verticalement le texte */
-  }
-  
-  .activites {
-    width: 63px; /* Largeur pour "Activités" */
-    height: 35px; /* Hauteur pour "Activités" */
-    line-height: 35px; /* Pour centrer verticalement le texte */
-  }
+
 
 /* Taille du texte en gras principal */
 
@@ -265,8 +263,8 @@ header {
     width: auto; /* La taille du bouton s'ajustera à son contenu */
     height: 100%;
     padding: 0 20px; /* Espacement intérieur */
-    background-color: #007bff; /* Couleur de fond bleu */
-    color: #fff; /* Couleur du texte */
+    background-color: var(--main-color); /* Couleur de fond bleu */
+    color: var(--main-bg-color); /* Couleur du texte */
     border: none; /* Supprimer la bordure par défaut */
     cursor: pointer; /* Curseur pointer */
     font-weight: 700; 
@@ -298,7 +296,7 @@ header {
     padding: 4px 19px 4px 19px; /* Espacement intérieur */
     border-style: groove;
     border-width: 2px;
-    border-color: #D9D9D9;
+    border-color: var(--main-bg-color);
     border-radius: 25px; /* Coins arrondis */
     background-color: #fff; /* Couleur de fond des boutons */
     margin-right: 10px; /* Marge entre les boutons */
@@ -364,7 +362,7 @@ gap: 15px;
 
 #hotels-list {
     width: 66%;
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
     border-radius: 15px;
     padding: 20px 40px;
 }
@@ -399,7 +397,7 @@ gap: 15px;
 }
 
 .hotel-card:hover {
-    color: #0065FC;
+    color: var(--main-color);
     box-shadow: 5px 5px 10px #C2C2C2;
 }
 
@@ -421,6 +419,7 @@ gap: 15px;
     padding-left: 46px;
     padding-right: 46px;
     margin-top: 55px;
+    margin-bottom: 65px;
 } 
 #selection_activites{
     width: 100%;
@@ -443,7 +442,7 @@ gap: 15px;
     white-space: nowrap;
 }
 
-#element_1,#element_2, #element_3, #element_4{
+.activites_card {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -452,17 +451,39 @@ gap: 15px;
     box-shadow: 1px 4px 14px 1px #d7d8d9;
 }
 
-#element_1 a, #element_2 a, #element_3 a, #element_4 a {
+.activites_card a {
     width: 100%;
     height: 100%;
     border-radius: 20px;
 }
-#element_1 img, #element_2 img, #element_3 img, #element_4 img{
+.activites_card img {
     width: 100%;
     height: 96%;
 }
 
 
+footer {
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #F2F2F2;
+    padding: 10px 35px;
+}
+
+.footer-menu {
+    width: 32%;
+}
+
+.footer-menu ul {
+    padding-left: 0px;
+    line-height: 30px;
+    list-style-type: none;
+}
+
+.footer-menu a:hover {
+    color: var(--main-color);
+}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
