@@ -461,13 +461,15 @@ gap: 15px;
     height: 96%;
 }
 
+ /******************** Partie Footer ******************/
+
 
 footer {
     max-width: 1440px;
     margin: auto;
     display: flex;
     justify-content: flex-start;
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
     padding: 10px 35px;
 }
 
