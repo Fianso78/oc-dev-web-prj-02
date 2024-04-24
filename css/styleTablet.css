@@ -1,0 +1,54 @@
+/* CSS pour tablette */
+
+@media screen and (max-width: 1024px)
+{
+    /* Partie filtres et info */
+
+/* Hébergements et populaires */
+    .hebergements-and-populaires{
+        flex-wrap: wrap;
+    }
+    .hebergements{
+        width: 100%;
+    }
+
+    .populaires{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 30px;
+        height: 252px;
+    }
+    .populaires-cards{
+        display: flex;
+        flex-direction: row;
+    }
+    .card {
+        margin-left: -12px;
+        width: 275px;
+        margin-right: 20px;
+    }
+    #activites_ville {
+        margin-left: -15px;
+        max-width: 934px;
+        max-height: 260px;
+        padding-right: 20px;
+        padding-bottom: 65px;
+    }
+    .activite_image {
+        width: 194px;
+        max-height: 200px;
+    }
+    .activites_card {
+        width: 195px;
+        height: 270px;
+    }
+    .titre_selection_activite {
+        text-wrap: wrap;
+        margin-left: 9px;
+        margin-top: 9px;
+        vertical-align: middle;
+        width: 156px;
+        height: 38px;
+        margin-bottom: 16px;
+    }
+}
