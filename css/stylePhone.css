@@ -16,8 +16,7 @@
         }
         .logo{
             margin-top: 30px;
-            display: flex;
-            justify-content: center;
+            margin-right: 30px;
             width: 61px;
             height: 19px;
         }
@@ -29,12 +28,12 @@
             max-width: 330px;
             margin-bottom: 33px;
         }
+        .activites_card {
+
+        }
         .subtitle-main {
             margin-left: 20px;
             margin-bottom: 35px;
-        }
-        .search-bar {
-            margin-left: 20px;
         }
         .main-container {
             width: 100%;
@@ -42,7 +41,22 @@
             box-sizing: border-box;
         }
         /* Menu */
-        
+        .search-button {
+            visibility: hidden;
+        }
+        .search-logo {
+            visibility: visible;
+            background-color: var(--main-color);
+            width: 49px;
+            height: 49px;
+            border-radius: 15px;
+        }
+        .search-logo-icon {
+            padding-top: 16px;
+            padding-left: 16px;
+            width: 17px;
+            height: 17px;
+        }
     }
 
 @media screen and (max-width: 430px) {
@@ -108,28 +122,29 @@ a {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    margin: 0;
 }
 
 .hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding-right: 30px;
     
+    padding-right: 30px;
     padding-left: 30px;
-    box-sizing: border-box;
+    margin: 0;
+    width: 430px;
 }
 
 /****** Hebergements ***********/
 .hebergements {
+    margin-top: 35px;
     width: 65%;
-    height: 614px;
+    height: 1644px;
 }
 
 /****** Populaires ***********/
 .populaires {
-    width: 32%;
-    padding-top: 20px;
-    height: 614px;
+    background-color: var(--main-bg-color);
+    width: 38%;
+    height: 1214px;
 }
 
 .populaires-title {
@@ -137,7 +152,10 @@ a {
     justify-content: space-between;
     align-items: center;
 }
-
+.populaires-cards {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
@@ -220,36 +238,13 @@ header {
     }
 /* Taille du logo */
 
-    .logo {
-    width: 61.09px; /* Largeur */
-    height: 19px; /* Hauteur */
-    }
     
-    /* Optionnel : pour centrer le logo verticalement */
-    .logo-container {
-    display: flex;
-    align-items: center;
-    }
-
-    /* Taille du Header, texte */
     
     header {
     width: 100%; /* Pour que le header prenne toute la largeur de la page */
     height: 79px; /* Hauteur spécifique de 79 pixels */
     }
-    
-    .logo {
-    width: 61.09px; /* Largeur souhaitée */
-    height: 19px; /* Hauteur souhaitée */
-    }
-    
-    /* Optionnel : pour centrer le logo verticalement */
-    .logo-container {
-    display: flex;
-    align-items: center;
-    }
-    
-
+ 
 
 /* Taille du texte en gras principal */
 
@@ -261,7 +256,7 @@ header {
 
 /* Taille du sous-titres */
 
-    .headline p {
+    .subtitle-main {
     width: 1340px; /* Largeur spécifique */
     height: 19px; /* Hauteur spécifique */
 
@@ -270,8 +265,9 @@ header {
     }
     .search-bar {
     display: flex;
+    margin-left: 20px;
     align-items: center;
-    width: 377px; /* Largeur de la barre de recherche */
+    width: 335px; /* Largeur de la barre de recherche */
     height: 49px; /* Hauteur de la barre de recherche */
     border-radius: 15px; /* Coins arrondis */
     border: 1px solid #ccc; /* Bordure */
@@ -306,6 +302,7 @@ header {
     }
     
     .search-button {
+        display: none;
     width: auto; /* La taille du bouton s'ajustera à son contenu */
     height: 100%;
     padding: 0 20px; /* Espacement intérieur */
@@ -323,7 +320,7 @@ header {
     .filter-bar {
     display: grid;
     align-items: center;
-    margin-top: 35px;
+    margin-top: 20px;
     margin-bottom: 35px;
     max-width: 200px;
     }
@@ -332,9 +329,17 @@ header {
     max-width: 54px;
     font-weight: 700;
     font-size: 18px;
-    padding-right: 15px;
+    margin-left: 20px;
     }
-
+    .filter-buttons {
+        display: grid;
+        margin-left: 20px;
+        grid-template-columns: 11rem;
+        grid-template-rows: 4rem;
+        grid-template-areas: 
+        "s1 s2"
+        "s1 s2"
+    }
     .filter-button {
     display: flex;
     align-items: center;
@@ -366,10 +371,10 @@ header {
     }
 
     .info {
-    width: 80px;
+        margin-left: 20px;
+    width: 24px;
     height: 24px;
     border-radius: 100%;
-    margin: 0;
     border: 1px solid #D9D9D9;
     display: flex;
     justify-content: center;
@@ -386,6 +391,8 @@ header {
     align-items: center;
     display: flex;
     margin: 0;
+    width: 19rem;
+    height: 2rem;
     }
     .info-container {
 display: flex;
@@ -422,13 +429,13 @@ gap: 15px;
 
 #hotels-cardlist {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .hotel-card {
-    width: 30%;
+    width: 95%;
     min-width: 120px;
     background-color: white;
     padding: 5px;
@@ -464,18 +471,18 @@ gap: 15px;
     /******************** Partie Activités ******************/
 
     #activites_ville{
-    padding-left: 46px;
-    padding-right: 46px;
-    margin-top: 55px;
-    margin-bottom: 65px;
-} 
+        padding-left: 46px;
+        padding-right: 46px;
+        margin-top: 355px;
+        margin-bottom: 65px;
+    } 
 #selection_activites{
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     margin-top: 20px;
-    height: 460px;
+    height: 960px;
 }
 .activite_image{
     object-fit: cover; /* évite la déformation des images */
@@ -491,10 +498,11 @@ gap: 15px;
 }
 
 .activites_card {
+    width: 300px;
+    height: 270px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    width: 22%;
     border-radius: 20px;
     box-shadow: 1px 4px 14px 1px #d7d8d9;
 }
@@ -514,15 +522,17 @@ gap: 15px;
 
 footer {
     max-width: 1440px;
-    margin: auto;
+    margin-top: 700px;
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: flex-start;
     background-color: var(--main-bg-color);
     padding: 10px 35px;
 }
 
 .footer-menu {
-    width: 32%;
+    width: 60%;
 }
 
 .footer-menu ul {

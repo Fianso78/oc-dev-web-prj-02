@@ -25,7 +25,9 @@ body {
     padding: 0 50px;
     box-sizing: border-box;
 }
-
+.search-logo {
+    display: none;
+}
 a {
     color: inherit;
     text-decoration: none;
