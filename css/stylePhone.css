@@ -137,14 +137,17 @@ a {
 .hebergements {
     margin-top: 35px;
     width: 65%;
-    height: 1644px;
+    /* height: 1644px; */
+    order: 2;
 }
 
 /****** Populaires ***********/
 .populaires {
     background-color: var(--main-bg-color);
     width: 38%;
-    height: 1214px;
+    order: 1;
+    /* height: 1214px; */
+    padding-top: 30px;
 }
 
 .populaires-title {
@@ -249,16 +252,16 @@ header {
 /* Taille du texte en gras principal */
 
     .headline h1 {
-    width: 1340px; /* Largeur spécifique */
-    height: 26px; /* Hauteur spécifique */
+    /* width: 1340px; Largeur spécifique */
+    /* height: 26px; Hauteur spécifique */
     line-height: 26px; /* Pour centrer verticalement le texte */
     }
 
 /* Taille du sous-titres */
 
     .subtitle-main {
-    width: 1340px; /* Largeur spécifique */
-    height: 19px; /* Hauteur spécifique */
+    /* width: 1340px; Largeur spécifique */
+    /* height: 19px; Hauteur spécifique */
 
 /* Barre de recherche */
 
@@ -473,7 +476,7 @@ gap: 15px;
     #activites_ville{
         padding-left: 46px;
         padding-right: 46px;
-        margin-top: 355px;
+        /* margin-top: 355px; */
         margin-bottom: 65px;
     } 
 #selection_activites{

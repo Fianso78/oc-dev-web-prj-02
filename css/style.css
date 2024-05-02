@@ -79,14 +79,14 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
-    height: 614px;
+    /* height: 614px; */
 }
 
 /****** Populaires ***********/
 .populaires {
     width: 32%;
     padding-top: 20px;
-    height: 614px;
+    /* height: 614px; */
 }
 
 .populaires-title {
@@ -211,16 +211,16 @@ header {
 /* Taille du texte en gras principal */
 
   .headline h1 {
-  width: 1340px; /* Largeur spécifique */
-  height: 26px; /* Hauteur spécifique */
+  /* width: 1340px; /* Largeur spécifique */
+  /* height: 26px; Hauteur spécifique */ */
   line-height: 26px; /* Pour centrer verticalement le texte */
  }
 
 /* Taille du sous-titres */
 
  .headline p {
-    width: 1340px; /* Largeur spécifique */
-    height: 19px; /* Hauteur spécifique */
+    /* width: 1340px; Largeur spécifique */
+    /* height: 19px; Hauteur spécifique */
 
 /* Barre de recherche */
 
@@ -430,6 +430,7 @@ gap: 15px;
     justify-content: space-between;
     margin-top: 20px;
     height: 460px;
+    gap: 20px;
 }
 .activite_image{
     object-fit: cover; /* évite la déformation des images */
