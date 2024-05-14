@@ -1,5 +1,6 @@
-@media screen and (min-width: 431px) {
-    /****** General ***********/
+/* @media screen and (min-width: 431px) { */
+
+/****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -24,10 +25,13 @@ body {
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+    min-width: 320px;
 }
+
 .search-logo {
     display: none;
 }
+
 a {
     color: inherit;
     text-decoration: none;
@@ -70,8 +74,7 @@ a {
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding-right: 30px;
-    
+    padding: 30px;
     padding-left: 30px;
     box-sizing: border-box;
 }
@@ -134,193 +137,242 @@ a {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Pour aligner verticalement les éléments du header */
-  }
-  
-  nav ul {
+    align-items: center;
+    /* Pour aligner verticalement les éléments du header */
+}
+
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-  }
-  
-  nav ul li {
-    margin: 0 10px; /* Pour ajouter de l'espace entre les éléments de la liste */
-  }
-  
-  nav ul li a {
+}
+
+nav ul li {
+    margin: 0 10px;
+    /* Pour ajouter de l'espace entre les éléments de la liste */
+}
+
+nav ul li a {
     text-decoration: none;
-  }
+}
 
 /* Changement de couleur lorsqu'on clique sur un onglet */
 
-  header nav ul li a {
+header nav ul li a {
     text-decoration: none;
-    color: black; /* Couleur par défaut du texte */
-  }
+    color: black;
+    /* Couleur par défaut du texte */
+}
 
-  .hebergement {
+.hebergement {
     color: var(--main-color);
-  }
-  .hebergement-bar {
-    height: 3px; /* Hauteur de la barre bleue */
-    background-color: var(--main-color); /* Couleur de la barre */
-  }
-  .navlink { /* Barre de lien */
-    font-weight: 400; 
-    font-size: 16px; /* Définir la taille et la épaisseur de la police */
+}
+
+.hebergement-bar {
+    height: 3px;
+    /* Hauteur de la barre bleue */
+    background-color: var(--main-color);
+    /* Couleur de la barre */
+}
+
+.navlink {
+    /* Barre de lien */
+    font-weight: 400;
+    font-size: 16px;
+    /* Définir la taille et la épaisseur de la police */
     padding-top: 10px;
-  }
-  .navlink:hover { /* Uniquement quand survolé par le curseur */
+}
+
+.navlink:hover {
+    /* Uniquement quand survolé par le curseur */
     border-top: solid 3px var(--main-color);
     color: var(--main-color);
-  }
+}
+
 /* Taille du logo */
 
-  .logo {
-    width: 61.09px; /* Largeur */
-    height: 19px; /* Hauteur */
-  }
-  
-  /* Optionnel : pour centrer le logo verticalement */
-  .logo-container {
-    display: flex;
-    align-items: center;
-  }
+.logo {
+    width: 61.09px;
+    /* Largeur */
+    height: 19px;
+    /* Hauteur */
+}
 
-  /* Taille du Header, texte */
-  
-  header {
-    width: 100%; /* Pour que le header prenne toute la largeur de la page */
-    height: 79px; /* Hauteur spécifique de 79 pixels */
-  }
-  
-  .logo {
-    width: 61.09px; /* Largeur souhaitée */
-    height: 19px; /* Hauteur souhaitée */
-  }
-  
-  /* Optionnel : pour centrer le logo verticalement */
-  .logo-container {
+/* Optionnel : pour centrer le logo verticalement */
+.logo-container {
     display: flex;
     align-items: center;
-  }
-  
+}
+
+/* Taille du Header, texte */
+
+header {
+    width: 100%;
+    /* Pour que le header prenne toute la largeur de la page */
+    height: 79px;
+    /* Hauteur spécifique de 79 pixels */
+}
+
+.logo {
+    width: 61.09px;
+    /* Largeur souhaitée */
+    height: 19px;
+    /* Hauteur souhaitée */
+}
+
+/* Optionnel : pour centrer le logo verticalement */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
 
 
 /* Taille du texte en gras principal */
 
-  .headline h1 {
-  /* width: 1340px; /* Largeur spécifique */
-  /* height: 26px; Hauteur spécifique */ */
-  line-height: 26px; /* Pour centrer verticalement le texte */
- }
+.headline h1 {
+    /* width: 1340px; /* Largeur spécifique */
+    /* height: 26px; Hauteur spécifique */
+    */ line-height: 26px;
+    /* Pour centrer verticalement le texte */
+}
 
 /* Taille du sous-titres */
 
- .headline p {
+.headline p {
     /* width: 1340px; Largeur spécifique */
     /* height: 19px; Hauteur spécifique */
 
-/* Barre de recherche */
+    /* Barre de recherche */
 
- }
- .search-bar {
+}
+
+.search-bar {
     display: flex;
     align-items: center;
-    width: 377px; /* Largeur de la barre de recherche */
-    height: 49px; /* Hauteur de la barre de recherche */
-    border-radius: 15px; /* Coins arrondis */
-    border: 1px solid #ccc; /* Bordure */
-    overflow: hidden; /* Pour masquer les éléments qui dépassent */
-  }
-  
-  .left-button { 
-    width: 50px; /* Largeur du bouton de gauche */
-    height: 49px; /* Hauteur du bouton de gauche */
-    border-right: 1px solid #ccc; /* Bordure de séparation */
+    width: 377px;
+    /* Largeur de la barre de recherche */
+    height: 49px;
+    /* Hauteur de la barre de recherche */
+    border-radius: 15px;
+    /* Coins arrondis */
+    border: 1px solid #ccc;
+    /* Bordure */
+    overflow: hidden;
+    /* Pour masquer les éléments qui dépassent */
+}
+
+.left-button {
+    width: 50px;
+    /* Largeur du bouton de gauche */
+    height: 49px;
+    /* Hauteur du bouton de gauche */
+    border-right: 1px solid #ccc;
+    /* Bordure de séparation */
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .vector-icon {
-    width: 14px; /* Largeur de l'icône de vecteur */
-    height: 18px; /* Hauteur de l'icône de vecteur */
+}
 
-  }
-  
-  .search-input {
+.vector-icon {
+    width: 14px;
+    /* Largeur de l'icône de vecteur */
+    height: 18px;
+    /* Hauteur de l'icône de vecteur */
+
+}
+
+.search-input {
     flex: 1;
-    border: none; /* Supprimer la bordure par défaut */
-    outline: none; /* Supprimer la mise en surbrillance du focus */
+    border: none;
+    /* Supprimer la bordure par défaut */
+    outline: none;
+    /* Supprimer la mise en surbrillance du focus */
     font-weight: 700;
     font-size: 18px;
     height: 49px;
     line-height: 49px;
     text-align: center;
     color: #000;
-  }
-  
-  .search-button {
-    width: auto; /* La taille du bouton s'ajustera à son contenu */
+}
+
+.search-button {
+    width: auto;
+    /* La taille du bouton s'ajustera à son contenu */
     height: 100%;
-    padding: 0 20px; /* Espacement intérieur */
-    background-color: var(--main-color); /* Couleur de fond bleu */
-    color: var(--main-bg-color); /* Couleur du texte */
-    border: none; /* Supprimer la bordure par défaut */
-    cursor: pointer; /* Curseur pointer */
-    font-weight: 700; 
+    padding: 0 20px;
+    /* Espacement intérieur */
+    background-color: var(--main-color);
+    /* Couleur de fond bleu */
+    color: var(--main-bg-color);
+    /* Couleur du texte */
+    border: none;
+    /* Supprimer la bordure par défaut */
+    cursor: pointer;
+    /* Curseur pointer */
+    font-weight: 700;
     font-size: 18px;
-  }
-  
+}
 
-  /* Filtre catégorie */
 
-  .filter-bar {
+/* Filtre catégorie */
+
+.filter-bar {
     display: flex;
     align-items: center;
     margin-top: 35px;
     margin-bottom: 35px;
-  }
-  
-  .filter-name {
+}
+
+.filter-name {
     max-width: 54px;
     font-weight: 700;
     font-size: 18px;
     padding-right: 15px;
-  }
+}
 
-  .filter-button {
+.filter-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 50px; /* Hauteur des boutons */
-    padding: 4px 19px 4px 19px; /* Espacement intérieur */
+    height: 50px;
+    /* Hauteur des boutons */
+    padding: 4px 19px 4px 19px;
+    /* Espacement intérieur */
     border-style: groove;
     border-width: 2px;
     border-color: var(--main-bg-color);
-    border-radius: 25px; /* Coins arrondis */
-    background-color: #fff; /* Couleur de fond des boutons */
-    margin-right: 10px; /* Marge entre les boutons */
+    border-radius: 25px;
+    /* Coins arrondis */
+    background-color: #fff;
+    /* Couleur de fond des boutons */
+    margin-right: 10px;
+    /* Marge entre les boutons */
     font-weight: 700;
-    font-size: 17px; /* Taille de la police */
-    color: #333; /* Couleur du texte */
+    font-size: 17px;
+    /* Taille de la police */
+    color: #333;
+    /* Couleur du texte */
     gap: 10px;
     cursor: pointer;
-  }
+}
 
-  .filter-button:hover { /* Couleur si souris sur l'élement */
+.filter-button:hover {
+    /* Couleur si souris sur l'élement */
     background-color: #DEEBFF;
-  }
+}
 
-  .filter-button img {
-    width: 20px; /* Largeur des logos */
-    height: auto; /* Hauteur des logos */
-    margin-right: 5px; /* Marge entre le logo et le texte */
-  }
+.filter-button img {
+    width: 20px;
+    /* Largeur des logos */
+    height: auto;
+    /* Hauteur des logos */
+    margin-right: 5px;
+    /* Marge entre le logo et le texte */
+}
 
-  .info {
+.info {
     width: 27px;
     height: 24px;
     border-radius: 100%;
@@ -329,28 +381,29 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .vector-icon-info {
+.vector-icon-info {
     padding-top: 0.4rem;
     padding-left: 0.6rem;
     align-items: center;
-  }
+}
 
-  .info-name {
+.info-name {
     align-items: center;
     display: flex;
     margin: 0;
-  }
-    .info-container {
-display: flex;
-align-items: center;
-margin-bottom: 15px;
-gap: 15px;
-    }
-    
+}
 
-  /* Résultat recherche Hébergement Marseille */
+.info-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+
+
+/* Résultat recherche Hébergement Marseille */
 
 /* Hotel Section */
 #hotel-searchresults {
@@ -416,55 +469,50 @@ gap: 15px;
     margin-top: 0.6rem;
 }
 
- /******************** Partie Activités ******************/
+/******************** Partie Activités ******************/
 
- #activites_ville{
-    padding-right: 46px;
+#activites_ville {
     margin-top: 55px;
     margin-bottom: 65px;
-} 
-#selection_activites{
+}
+
+#selection_activites {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 20px;
-    height: 460px;
+    margin-bottom: 20px;
     gap: 20px;
-}
-.activite_image{
-    object-fit: cover; /* évite la déformation des images */
-    width: 100%;
-    border-radius: 16px 16px 0px 0px;
-}
-.titre_selection_activite{
-    font-weight: bold;
-    font-size: 16px;
-    padding-left: 5%;
-    height: 38px;
-    white-space: nowrap;
 }
 
 .activites_card {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
+    height: 440px;
     width: 22%;
     border-radius: 20px;
     box-shadow: 1px 4px 14px 1px #d7d8d9;
 }
 
-.activites_card a {
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-}
-.activites_card img {
-    width: 100%;
-    height: 96%;
+.activite_image {
+    object-fit: cover;
+    /* évite la déformation des images */
+    /* width: 100%; */
+    height: 380px;
+    border-radius: 16px 16px 0px 0px;
 }
 
- /******************** Partie Footer ******************/
+.titre_selection_activite {
+    font-weight: bold;
+    font-size: 16px;
+    /* height: 59px; */
+    padding: 20px 19px 20px 19px
+}
+
+
+/******************** Partie Footer ******************/
 
 
 footer {
@@ -489,6 +537,7 @@ footer {
 .footer-menu a:hover {
     color: var(--main-color);
 }
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -498,4 +547,5 @@ footer {
 @media (max-width: 767.98px) {
     /* ... */
 }
-}
+
+/* } */
