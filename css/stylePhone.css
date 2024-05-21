@@ -14,17 +14,26 @@
     }
 
     header nav {
-        margin-left: 20px;
+        /* margin-left: 20px; */
         margin-top: 30px;
+        width: 100%;
+        border-bottom: solid 2px var(--main-bg-color);
+    }
+    header nav ul li{
+        width: 100%;
+        padding: 10px;
+    }
+    header nav ul li:hover{
+        border-bottom: solid 2px var(--main-color);
     }
 
-    header nav ul li {
+    /* header nav ul li {
         margin-right: 90px;
-    }
+    } */
 
     .logo {
         margin-top: 30px;
-        margin-right: 30px;
+        /* margin-right: 30px; */
         width: 61px;
         height: 19px;
     }
@@ -57,6 +66,7 @@
         width: 49px;
         height: 49px;
         border-radius: 15px;
+        display: block;
     }
 
     .search-logo-icon {
@@ -67,67 +77,6 @@
     }
 
     /* @media screen and (max-width: 430px) { */
-
-    /****** General ***********/
-    * {
-        font-family: 'Raleway', sans-serif;
-    }
-
-    :root {
-        --main-color: #0065FC;
-        --main-bg-color: #F2F2F2;
-        --filter-bg-color: #DEEBFF;
-    }
-
-    .fa-solid {
-        color: var(--main-color);
-    }
-
-    body {
-        display: flex;
-        justify-content: center;
-    }
-
-
-    a {
-        color: inherit;
-        text-decoration: none;
-    }
-
-    .section-title {
-        margin: 0;
-        font-size: 22px;
-    }
-
-    .card {
-        background-color: white;
-        border-radius: 20px;
-        padding: 5px;
-        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    }
-
-    .card img {
-        object-fit: cover;
-    }
-
-    .card-title {
-        font-size: 16px;
-    }
-
-    .euro {
-        font-weight: 700;
-    }
-
-    .neutral-star {
-        color: var(--main-bg-color)
-    }
-
-    /****** Hebergements And Populaires ***********/
-    /* .hebergements-and-populaires { */
-    /*     display: flex; */
-    /*     justify-content: space-between; */
-    /*     margin: 0; */
-    /* } */
 
     .hebergements-and-populaires section {
         padding-right: 30px;
@@ -178,6 +127,7 @@
         margin: 0;
         padding: 0;
         display: flex;
+        justify-content: center;
     }
 
     nav ul li {
@@ -218,8 +168,7 @@
 
     .navlink:hover {
         /* Uniquement quand survolé par le curseur */
-        border-top: solid 3px var(--main-color);
-        color: var(--main-color);
+        border-top: solid 0px var(--main-color);
     }
 
     /* Taille du logo */
